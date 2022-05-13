@@ -36,3 +36,35 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
      // Your code to run since DOM is loaded and ready
     });
+
+/* -- MON CODE -- */
+
+jQuery(document).ready(() => {
+    if (jQuery){
+      console.log("jQuery est chargé.");
+      // Mon code
+      $("#accueil").click(function() {
+        $("h3").text("Accueil");
+      })
+      $("#marche").click(function() {
+        $("h3").text("Marchés");
+      })
+      $("#brocante").click(function() {
+        $("h3").text("Brocantes");
+      })
+      $("#carte").click(function() {
+        $("h3").text("Carte");
+      })
+      $("#search").click(function() {
+        $("h3").text("Recherche");
+      })
+      $("#login").click(function() {
+        $("h3").text("Connexion");
+      })
+      
+    }
+    else {
+      alert("jQuery ne s'est pas chargé.");
+    }
+  })
+  
