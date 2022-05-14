@@ -53,7 +53,7 @@ a {
   background-color: wheat;
 }
 
-.header h3 {
+h3 {
   font-weight: 700;
   position: relative;
   top: 5px;
@@ -163,6 +163,22 @@ a {
   height: 100vh;
 }
 
+.events {
+  margin-top: 15px;
+  border: 1px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: azure;
+}
+
+.img_event {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   body {
     margin: calc(var(--header-height) + 1rem) 0 0 0;
@@ -181,6 +197,9 @@ a {
   }
   .body-pd {
     padding-left: calc(var(--nav-width) + 188px);
+  }
+  .img_event {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -45,15 +45,19 @@ jQuery(document).ready(() => {
       // Mon code
       $("#accueil").click(function() {
         $("h3").text("Accueil");
+        $("#container").html("<h4>Accueil</h4>");
       })
       $("#marche").click(function() {
         $("h3").text("Marchés");
+        $("#container").html("<h4>Liste des marchés :</h4>");
       })
       $("#brocante").click(function() {
         $("h3").text("Brocantes");
+        $("#container").html("<h4>Liste des brocantes :</h4>");
       })
       $("#carte").click(function() {
         $("h3").text("Carte");
+        $("#container").load("appleMaps/index.html");
       })
       $("#search").click(function() {
         $("h3").text("Recherche");
